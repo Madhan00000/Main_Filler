@@ -16,6 +16,7 @@ from database.connections_mdb import active_connection
 from urllib.parse import quote_plus
 from TechVJ.util.file_properties import get_name, get_hash, get_media_file_size
 logger = logging.getLogger(__name__)
+
 BATCH_FILES = {}
 join_db = JoinReqs
 
@@ -28,13 +29,6 @@ join_db = JoinReqs
       #  await message.reply_text("Welcome to the bot!")
         
 @Client.on_message(filters.command("start") & filters.incoming)
-
-
-
-
-
-
-
 
 
 async def start(client, message):
